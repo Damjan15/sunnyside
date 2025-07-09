@@ -136,3 +136,11 @@
 .audience-bg {
   @apply bg-[url(/images/mobile/image-stand-out.jpg)] md:bg-[url(/images/desktop/image-stand-out.jpg)] bg-center bg-cover bg-no-repeat;
 }
+
+.design {
+  @apply bg-[url(/images/mobile/image-graphic-design.jpg)] md:bg-[url(/images/desktop/image-graphic-design.jpg)] bg-cover bg-center bg-no-repeat;
+}
+
+.photography {
+  @apply bg-[url(/images/mobile/image-photography.jpg)] md:bg-[url(/images/desktop/image-photography.jpg)] bg-cover bg-center bg-no-repeat;
+}
