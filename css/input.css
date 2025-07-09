@@ -144,3 +144,23 @@
 .photography {
   @apply bg-[url(/images/mobile/image-photography.jpg)] md:bg-[url(/images/desktop/image-photography.jpg)] bg-cover bg-center bg-no-repeat;
 }
+
+.project {
+  @apply h-[385px] lg:h-[447px] bg-cover bg-center bg-no-repeat;
+}
+
+.project-1 {
+  @apply bg-[url(/images/mobile/image-gallery-milkbottles.jpg)] md:bg-[url(/images/desktop/image-gallery-milkbottles.jpg)];
+}
+
+.project-2 {
+  @apply bg-[url(/images/mobile/image-gallery-orange.jpg)] md:bg-[url(/images/desktop/image-gallery-orange.jpg)];
+}
+
+.project-3 {
+  @apply bg-[url(/images/mobile/image-gallery-cone.jpg)] md:bg-[url(/images/desktop/image-gallery-cone.jpg)];
+}
+
+.project-4 {
+  @apply bg-[url(/images/mobile/image-gallery-sugar-cubes.jpg)] md:bg-[url(/images/desktop/image-gallery-sugarcubes.jpg)];
+}

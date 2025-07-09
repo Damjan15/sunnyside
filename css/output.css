@@ -183,9 +183,6 @@
   .relative {
     position: relative;
   }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
-  }
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
@@ -209,9 +206,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .h-\[24px\] {
     height: 24px;
@@ -249,25 +243,12 @@
   .max-w-\[1350px\] {
     max-width: 1350px;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -286,12 +267,6 @@
   }
   .justify-end {
     justify-content: flex-end;
-  }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
   }
   .gap-24 {
     gap: calc(var(--spacing) * 24);
@@ -322,10 +297,6 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -378,15 +349,8 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-opacity {
     transition-property: opacity;
@@ -421,6 +385,11 @@
       width: 170px;
     }
   }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .md\:space-y-18 {
     @media (width >= 48rem) {
       :where(& > :not(:last-child)) {
@@ -453,6 +422,11 @@
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 }
@@ -794,6 +768,39 @@
     background-image: url(/images/desktop/image-photography.jpg);
   }
 }
+.project {
+  height: 385px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (width >= 64rem) {
+    height: 447px;
+  }
+}
+.project-1 {
+  background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+  @media (width >= 48rem) {
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+  }
+}
+.project-2 {
+  background-image: url(/images/mobile/image-gallery-orange.jpg);
+  @media (width >= 48rem) {
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
+  }
+}
+.project-3 {
+  background-image: url(/images/mobile/image-gallery-cone.jpg);
+  @media (width >= 48rem) {
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
+  }
+}
+.project-4 {
+  background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+  @media (width >= 48rem) {
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -818,16 +825,6 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-duration {
   syntax: "*";
@@ -862,8 +859,6 @@
       --tw-translate-z: 0;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-leading: initial;
