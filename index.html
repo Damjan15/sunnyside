@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sunnyside is a creative agency offering branding, design, and photography services for modern businesses." />
+    <meta name="keywords" content="creative agency, design, branding, photography, marketing, Sunnyside" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Sunnyside | Creative Marketing Agency" />
+    <meta property="og:description"
+        content="Creative solutions for modern brands. Check out our portfolio and services." />
+    <meta property="og:image" content="images/preview.jpg" />
+    <meta property="og:url" content="https://sunnyside-smoky.vercel.app/images/preview.jpg" />
+    <meta property="og:type" content="website" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +34,8 @@
         <header class="relative">
             <div class="max-w-[1350px] mx-auto p-8 flex items-center justify-between">
                 <div>
-                    <img src="images/logo.svg" class="w-[123px] h-[24px] md:w-[170px] md:h-[33px]" alt="">
+                    <img src="images/logo.svg" class="w-[123px] h-[24px] md:w-[170px] md:h-[33px]"
+                        alt="Sunnyside Agency Logo">
                 </div>
 
                 <div class="hidden lg:flex items-center space-x-8">
@@ -42,21 +55,21 @@
                 </div>
 
                 <button class="block lg:hidden" id="open-menu-btn">
-                    <img src="images/icon-hamburger.svg" alt="">
+                    <img src="images/icon-hamburger.svg" alt="Open Mobile Menu">
                 </button>
             </div>
 
             <nav class="fixed right-0 top-0 bottom-0 h-full z-50 w-[300px] bg-yellow-500 shadow-2xl lg:hidden transform transition-transform translate-x-full duration-500 ease-in-out flex flex-col items-center justify-center gap-15 pt-12"
                 id="mobile-menu">
                 <a href="#">
-                    <img src="/images/logo.svg" alt="">
+                    <img src="/images/logo.svg" alt="Sunnyside Agency Logo">
                 </a>
                 <button class="absolute top-5 right-5" id="close-menu-btn">
-                    <img src="images/close-line.svg" class="w-8 h-8" alt="">
+                    <img src="images/close-line.svg" class="w-8 h-8" alt="Close Mobile Menu">
                 </button>
-                <a href="#" class="body-1 text-blue-950">About</a>
-                <a href="#" class="body-1 text-blue-950">Services</a>
-                <a href="#" class="body-1 text-blue-950">Projects</a>
+                <a href="#about" class="body-1 text-blue-950 nav-link-item">About</a>
+                <a href="#services" class="body-1 text-blue-950 nav-link-item">Services</a>
+                <a href="#projects" class="body-1 text-blue-950 nav-link-item">Projects</a>
                 <a href="#" class="h-xs nav-contact-btn font-fraunces">Contact</a>
             </nav>
         </header>
@@ -67,7 +80,7 @@
                 We Are Creatives</h1>
 
             <div>
-                <img src="images/icon-arrow-down.svg" alt="">
+                <img src="images/icon-arrow-down.svg" alt="Arrow Down Icon">
             </div>
         </section>
     </main>
@@ -126,7 +139,8 @@
 
         <div class="px-4 my-12 grid grid-cols-1 gap-24 lg:grid-cols-3 lg:my-24">
             <div class="flex flex-col items-center text-center space-y-8">
-                <img src="images/image-emily.jpg" class="w-[72px] h-[72px] rounded-full" alt="">
+                <img src="images/image-emily.jpg" class="w-[72px] h-[72px] rounded-full"
+                    alt="Image of Emily, marketing director">
 
                 <p class="body-2 text-grey-600">We put our trust in Sunnyside and they delivered, making sure our needs
                     were met and deadlines were
@@ -139,7 +153,8 @@
             </div>
 
             <div class="flex flex-col items-center text-center space-y-8">
-                <img src="images/image-thomas.jpg" class="w-[72px] h-[72px] rounded-full" alt="">
+                <img src="images/image-thomas.jpg" class="w-[72px] h-[72px] rounded-full"
+                    alt="Image of Thomas, chief operating officer">
 
                 <p class="body-2 text-grey-600">Sunnyside's enthusiasam coupled with their keen interest in our brand's
                     success made it a satisfying and enjoyable experience</p>
@@ -151,7 +166,8 @@
             </div>
 
             <div class="flex flex-col items-center text-center space-y-8">
-                <img src="images/image-jennie.jpg" class="w-[72px] h-[72px] rounded-full" alt="">
+                <img src="images/image-jennie.jpg" class="w-[72px] h-[72px] rounded-full"
+                    alt="Image of Jennie, business owner">
 
                 <p class="body-2 text-grey-600">Incredible end result! Our sales increased over 400% when we worked with
                     Sunnyside. Highly recommended!</p>
@@ -177,7 +193,7 @@
     <!-- Footer -->
     <footer class="w-full bg-green-300 py-12">
         <div class="flex flex-col items-center justify-center space-y-8">
-            <img src="images/logo.svg" class="w-[170px] h-[33px]" alt="">
+            <img src="images/logo.svg" class="w-[170px] h-[33px]" alt="Sunnyside Agency Logo">
 
             <ul class="flex items-center space-x-6">
                 <li>
@@ -195,21 +211,21 @@
 
             <div class="flex space-x-4">
                 <a href="https://facebook.com" target="_blank" class="transition-opacity duration-300 hover:opacity-80">
-                    <img src="images/icon-facebook.svg" alt="">
+                    <img src="images/icon-facebook.svg" alt="Facebook Icon">
                 </a>
 
                 <a href="https://instagram.com" target="_blank"
                     class="transition-opacity duration-300 hover:opacity-80">
-                    <img src="images/icon-instagram.svg" alt="">
+                    <img src="images/icon-instagram.svg" alt="Instagram Icon">
                 </a>
 
                 <a href="https://x.com" target="_blank" class="transition-opacity duration-300 hover:opacity-80">
-                    <img src="images/icon-twitter.svg" alt="">
+                    <img src="images/icon-twitter.svg" alt="Twitter Icon">
                 </a>
 
                 <a href="https://pinterest.com" target="_blank"
                     class="transition-opacity duration-300 hover:opacity-80">
-                    <img src="images/icon-pinterest.svg" alt="">
+                    <img src="images/icon-pinterest.svg" alt="Pinterest Icon">
                 </a>
 
             </div>

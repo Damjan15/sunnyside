@@ -12,4 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
   closeMenuBtn.addEventListener("click", function () {
     mobileMenu.classList.add("translate-x-full");
   });
+
+  mobileMenu.querySelectorAll(".nav-link-item").forEach((item) =>
+    item.addEventListener("click", () => {
+      mobileMenu.classList.add("translate-x-full");
+    })
+  );
 });
