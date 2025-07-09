@@ -117,6 +117,10 @@
   @apply after:bg-red-400/25 after:rounded-full after:transition-all after:ease-in after:duration-300 after:-z-10 hover:after:bg-red-400;
 }
 
+.section-grid {
+  @apply grid grid-cols-1 md:grid-cols-2;
+}
+
 .grid-wrapper {
   @apply flex flex-col items-center justify-center space-y-8 h-[600px] px-12;
 }
@@ -127,4 +131,8 @@
 
 .transform-bg {
   @apply bg-[url(/images/mobile/image-transform.jpg)] md:bg-[url(/images/desktop/image-transform.jpg)] bg-center bg-cover bg-no-repeat;
+}
+
+.audience-bg {
+  @apply bg-[url(/images/mobile/image-stand-out.jpg)] md:bg-[url(/images/desktop/image-stand-out.jpg)] bg-center bg-cover bg-no-repeat;
 }
