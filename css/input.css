@@ -18,6 +18,10 @@
   --font-barlow: "Barlow", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Typography */
 .h1,
 .h2,
@@ -94,7 +98,7 @@
 }
 
 .nav-contact-btn {
-  @apply flex items-center justify-center w-[160px] h-[56px] bg-yellow-500 text-grey-950 uppercase rounded-[28px];
+  @apply flex items-center justify-center w-[160px] h-[56px] bg-white text-grey-950 uppercase rounded-[28px];
 }
 
 .header {
@@ -122,7 +126,7 @@
 }
 
 .grid-wrapper {
-  @apply flex flex-col items-center justify-center space-y-8 h-[600px] px-12;
+  @apply flex flex-col items-center justify-center text-center space-y-8 h-[600px] px-12;
 }
 
 .grid-heading {

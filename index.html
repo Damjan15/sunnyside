@@ -28,30 +28,36 @@
                 <div class="hidden lg:flex items-center space-x-8">
                     <ul class="flex space-x-8">
                         <li>
-                            <a href="#" class="body-2 nav-item">About</a>
+                            <a href="#about" class="body-2 nav-item">About</a>
                         </li>
                         <li>
-                            <a href="#" class="body-2 nav-item">Services</a>
+                            <a href="#services" class="body-2 nav-item">Services</a>
                         </li>
                         <li>
-                            <a href="#" class="body-2 nav-item">Projects</a>
+                            <a href="#projects" class="body-2 nav-item">Projects</a>
                         </li>
                     </ul>
 
                     <a href="#" class="h-xs nav-btn">Contact</a>
                 </div>
 
-                <button class="block lg:hidden" id="toggle-button">
+                <button class="block lg:hidden" id="open-menu-btn">
                     <img src="images/icon-hamburger.svg" alt="">
                 </button>
             </div>
 
-            <nav class="hidden w-[100%] bg-white flex-col items-center justify-center space-y-8 py-8 -translate-x-1/2 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-20 left-1/2 "
+            <nav class="fixed right-0 top-0 bottom-0 h-full z-50 w-[300px] bg-yellow-500 shadow-2xl lg:hidden transform transition-transform translate-x-full duration-500 ease-in-out flex flex-col items-center justify-center gap-15 pt-12"
                 id="mobile-menu">
-                <a href="#" class="body-1 text-grey-550">About</a>
-                <a href="#" class="body-1 text-grey-550">Services</a>
-                <a href="#" class="body-1 text-grey-550">Projects</a>
-                <a href="#" class="h-xs nav-contact-btn">Contact</a>
+                <a href="#">
+                    <img src="/images/logo.svg" alt="">
+                </a>
+                <button class="absolute top-5 right-5" id="close-menu-btn">
+                    <img src="images/close-line.svg" class="w-8 h-8" alt="">
+                </button>
+                <a href="#" class="body-1 text-blue-950">About</a>
+                <a href="#" class="body-1 text-blue-950">Services</a>
+                <a href="#" class="body-1 text-blue-950">Projects</a>
+                <a href="#" class="h-xs nav-contact-btn font-fraunces">Contact</a>
             </nav>
         </header>
 
@@ -67,7 +73,7 @@
     </main>
 
     <!-- Transform -->
-    <section class="section-grid">
+    <section class="section-grid" id="about">
         <div class="grid-wrapper">
             <h2 class="grid-heading">Transform your brand</h2>
             <p class="body-2 text-grey-550">We are a full-service creative agency specializing in helping brands grow
@@ -94,7 +100,7 @@
     </section>
 
     <!-- Services -->
-    <section class="section-grid">
+    <section class="section-grid" id="services">
         <div class="design h-[600px]">
             <div class="flex flex-col items-center justify-end text-center h-full space-y-4 pb-8">
                 <h2 class="h5 text-green-800">Graphic Design</h2>
@@ -161,7 +167,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4" id="projects">
         <div class="project project-1"></div>
         <div class="project project-2"></div>
         <div class="project project-3"></div>
