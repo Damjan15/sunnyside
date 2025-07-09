@@ -23,7 +23,9 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-grey-400: #a7aaad;
     --color-grey-550: #808397;
+    --color-grey-600: #5b636d;
     --color-grey-950: #24303e;
     --font-fraunces: "Fraunces", serif;
     --font-barlow: "Barlow", sans-serif;
@@ -181,6 +183,9 @@
   .relative {
     position: relative;
   }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
@@ -190,17 +195,29 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-12 {
+    margin-block: calc(var(--spacing) * 12);
+  }
   .block {
     display: block;
   }
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-\[24px\] {
     height: 24px;
+  }
+  .h-\[72px\] {
+    height: 72px;
   }
   .h-\[300px\] {
     height: 300px;
@@ -213,6 +230,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .w-\[72px\] {
+    width: 72px;
   }
   .w-\[100\%\] {
     width: 100%;
@@ -229,12 +249,28 @@
   .max-w-\[1350px\] {
     max-width: 1350px;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .resize {
+    resize: both;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -250,6 +286,15 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-24 {
+    gap: calc(var(--spacing) * 24);
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {
@@ -275,17 +320,30 @@
   .overflow-x-hidden {
     overflow-x: hidden;
   }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
@@ -305,11 +363,30 @@
   .text-green-800 {
     color: var(--color-green-800);
   }
+  .text-grey-400 {
+    color: var(--color-grey-400);
+  }
   .text-grey-550 {
     color: var(--color-grey-550);
   }
+  .text-grey-600 {
+    color: var(--color-grey-600);
+  }
+  .text-grey-950 {
+    color: var(--color-grey-950);
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition-opacity {
     transition-property: opacity;
@@ -358,6 +435,11 @@
       padding-block: calc(var(--spacing) * 18);
     }
   }
+  .lg\:my-24 {
+    @media (width >= 64rem) {
+      margin-block: calc(var(--spacing) * 24);
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -366,6 +448,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 }
@@ -732,6 +819,16 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -765,6 +862,8 @@
       --tw-translate-z: 0;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-leading: initial;
