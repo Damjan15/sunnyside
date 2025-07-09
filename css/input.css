@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green-300: #90d4c6;
+  --color-green-500: #458d7e;
+  --color-green-600: #3e7467;
+  --color-green-800: #24554a;
+  --color-grey-400: #a7aaad;
+  --color-grey-550: #808397;
+  --color-grey-600: #5b636d;
+  --color-grey-950: #24303e;
+  --color-blue-800: #19536c;
+  --color-blue-950: #052c3b;
+  --color-red-400: #fe7766;
+  --color-yellow-500: #fad400;
+
+  --font-fraunces: "Fraunces", serif;
+  --font-barlow: "Barlow", sans-serif;
+}
+
+body {
+  @apply font-fraunces;
+}
+
+/* Typography */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.h-sm {
+  @apply leading-[125%] font-fraunces font-black;
+}
+
+.body-1,
+.body-2,
+.body-3,
+.body-4 {
+  @apply tracking-[0px] font-barlow font-semibold;
+}
+
+.h1 {
+  @apply text-[56px] tracking-[9px];
+}
+
+.h2 {
+  @apply text-[42px] tracking-[6px];
+}
+
+.h3 {
+  @apply text-[40px] tracking-[0px];
+}
+
+.h4 {
+  @apply text-[32px] tracking-[0px];
+}
+
+.h5 {
+  @apply text-[28px] tracking-[0px];
+}
+
+.h6 {
+  @apply text-[20px] tracking-[4px];
+}
+
+.h-sm {
+  @apply text-[18px] tracking-[0px];
+}
+
+.h-xs {
+  @apply text-[15px] leading-[165%] tracking-[1px] font-black;
+}
+
+.body-1 {
+  @apply text-[20px] leading-[125%];
+}
+
+.body-2 {
+  @apply text-[18px] leading-[165%];
+}
+
+.body-3 {
+  @apply text-[16px] leading-[170%];
+}
+
+.body-4 {
+  @apply text-[14px] leading-[180%];
+}
